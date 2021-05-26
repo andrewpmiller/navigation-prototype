@@ -212,34 +212,69 @@ permalink: /
 </nav>
 
 <ul role="list">
-
+<!-- FULL COURSES -->
 {%- for course_hash in courses_catalog -%}
     {%- assign item = course_hash[1] -%}
     {%- if item.course_type == "full" -%}
-        <!-- Full Course -->
-        <li>{{ item.title }}</li>
+        <!-- {{ item.course_ID }} -->
+        {%- assign tag_class = "" -%}
         {% for tag in item.tags %}
-        <li>{{ tag }}</li>
-        {% endfor %}      
+        {%- assign tag_class = tag_class | append: tag | append: " " | downcase -%}
+        {% endfor %}   
+        {%- assign trim_last = tag_class | size | minus: 1  -%}
+        {%- assign tag_class = tag_class | slice: 0, trim_last -%}   
+        <li class="{{ tag_class }}">
+          <h2>{{ item.title }}</h2>
+          <ul class="topics">
+            {% for tag in item.tags %}
+            <li><a href="#{{ tag | downcase }}">{{ tag }}</a></li>
+            {% endfor %}      
+          </ul>
+        </li>
+    {%- endif -%}
+{%- endfor -%}
+
+<!-- GYM SHORTS -->
+{%- for course_hash in courses_catalog -%}
+    {%- assign item = course_hash[1] -%}
+    {% if item.course_type == "short" %}
+        <!-- {{ item.course_ID }} -->
+        {%- assign tag_class = "" -%}
+        {% for tag in item.tags %}
+        {%- assign tag_class = tag_class | append: tag | append: " " | downcase  -%}
+        {% endfor %}
+        {%- assign trim_last = tag_class | size | minus: 1  -%}
+        {%- assign tag_class = tag_class | slice: 0, trim_last -%}
+        <li class="{{ tag_class }}">
+          <h2>{{ item.title }}</h2>
+          <ul class="topics">
+            {% for tag in item.tags %}
+            <li><a href="#{{ tag | downcase }}">{{ tag }}</a></li>
+            {% endfor %}      
+          </ul>
+        </li>
 {%- endif -%}
 {%- endfor -%}
 
-{%- for course_hash in courses_catalog -%}
-    {%- assign item = course_hash[1] -%}
-    {%- if item.course_type == "short" -%}
-        <!-- Gym Short -->
-        <li>{{ item.title }}</li>
-        {% for tag in item.tags %}
-        <li>{{ tag }}</li>
-        {% endfor %}
-{%- endif -%}
-{%- endfor -%}
-  
+<!-- TAKE 5 -->
 {%- for take5_hash in take5_catalog -%}
     {%- assign item = take5_hash[1] -%}    
     {%- assign format = "Tutorial" -%}
-    <!-- Take 5 -->
-        <li>{{ item.title }}</li>
+        <!-- {{ item.course_ID }} -->
+        {%- assign tag_class = "" -%}
+        {% for tag in item.tags %}
+        {%- assign tag_class = tag_class | append: tag | append: " " | downcase -%}
+        {% endfor %}
+        {%- assign trim_last = tag_class | size | minus: 1  -%}
+        {%- assign tag_class = tag_class | slice: 0, trim_last -%}
+        <li class="{{ tag_class }}">
+          <h2>{{ item.title }}</h2>
+          <ul class="topics">
+            {% for tag in item.tags %}
+            <li><a href="#{{ tag | downcase }}">{{ tag }}</a></li>
+            {% endfor %}      
+          </ul>
+        </li>
       
 {%- endfor -%}
 
