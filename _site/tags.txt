@@ -1,0 +1,225 @@
+TAGS!!!!
+
+Coding for Designers
+tags: ["Design","HTML","CSS"]
+ 
+jQuery Building Blocks
+tags: ["Development","JS"]
+
+UX Fundamentals
+tags: ["UX","Prototyping"]
+
+JavaScript Foundations
+tags: ["Development","JS"]
+
+Information Design and Visualization Fundamentals
+tags: ["Design"]
+
+Modern Web Design
+tags: ["Design","Development","HTML","CSS","JS"]
+
+JavaScript & jQuery Survival Guide
+tags: ["Development","JS"]
+
+Responsive Web Design Fundamentals
+tags: ["Design","Development","HTML","CSS","JS"]
+
+
+
+
+Defeating Busy
+short career productivity
+
+Creating a WordPress Theme
+short development php
+
+Introducing Sketch for UX and UI
+short UX prototyping
+
+Introduction to Git and GitHub
+short development github
+
+Structuring and Organizing HTML5 Forms
+short development accessibility HTML CSS 
+
+Advanced Rapid Prototyping With Axure
+short UX prototyping
+
+Creating a Drupal 8 Theme
+short development php
+
+Build Better Websites With Chrome Developer Tools
+short development
+
+Introduction to Node.JS
+short development JS
+
+3D Modeling for Virtual Reality Creation
+short design virtual-reality
+
+Working With Atomic Design and Pattern Lab
+short development design-systems design UX
+
+Prototyping for Digital Products and Websites
+short UX prototyping
+
+Designing Accessible and Responsive Websites
+short design accessibility HTML CSS
+
+Design Systems for Everyone
+short design design-systems UX
+ 
+Design Systems for Designers
+short design design-systems UX
+
+Design Systems for Developers
+short development design-systems design UX
+
+Design Systems for Product Managers
+short design design-systems UX
+
+
+
+Making a CSS Parallax Effect
+tutorial design CSS
+
+Creating a CSS Knockout Text Effect
+tutorial design CSS
+
+Adding a CSS Gradient Overlay to an Image
+tutorial design CSS
+
+Working With CSS Feature Queries
+tutorial design CSS
+
+Creating a Duotone With CSS
+tutorial design CSS
+
+Leading a Card Sorting Session
+tutorial UX
+
+Conducting Customer Interviews
+tutorial UX
+
+Writing Effective Survey Questions
+tutorial UX
+
+Leading Your First Usability Test
+tutorial UX
+
+Using the KJ Method
+tutorial UX
+
+Using Smart Layout in Sketch
+tutorial design sketch
+
+Prototyping in the Browser With CSS Grid Layout
+tutorial design CSS
+
+Working With the Timeline in InVision Studio
+tutorial design invision-studio
+
+Using Auto-Animate in Adobe XD
+tutorial design adobe-xd
+
+Creating Advanced Animations in Figma
+tutorial design figma
+
+Storytelling for Designers
+tutorial career UX
+
+How to Tell the Story of a Mid-Career Pivot
+tutorial career UX
+
+Crafting Your Story
+tutorial career UX
+
+Self-Promotion Through Your Online Presence
+tutorial career design
+
+Knowing Your Audience
+tutorial UX
+
+Using CSS Generated Content for Links
+tutorial design CSS
+
+Creating a Pixel Perfect Icon in Sketch
+tutorial design sketch
+
+Creating A Harmonious Color Scheme With HSL
+tutorial design CSS
+
+Writing CSS Media Queries For Responsive Design
+tutorial design CSS
+
+Getting Started With CSS Variables
+tutorial design CSS
+
+Publishing Your First Github Pages Website
+tutorial development github
+
+Managing Your Time Like a Pro
+tutorial career productivity
+
+Adding a Dark Mode Theme to Your Website
+tutorial design CSS
+
+Animating Microinteractions With Figma
+tutorial design figma
+Working With Overlays in Figma
+tutorial design figma
+
+Creating an Interactive Chart for the Web
+tutorial design HTML CSS development JS
+
+Introduction to Screen Readers Using VoiceOver
+tutorial accessibility HTML
+
+Designing Beautiful Focus States
+tutorial design accessibility CSS
+
+Flexible and Accessible Typesetting
+tutorial design accessibility CSS
+
+Responsively Designing With Viewport Units
+tutorial design accessibility CSS
+
+Creating Beautiful and Accessible Drop Caps
+tutorial design accessibility HTML
+
+Understanding Document Structure Accessibility
+tutorial design accessibility HTML
+
+Making Headings and Lists More Accessible
+tutorial design accessibility HTML
+
+Designing Accessible Data Tables
+tutorial design accessibility HTML
+
+Improving Image Accessibility With Alt Text
+tutorial design accessibility HTML
+
+Writing Effective and Accessible Alt Text
+tutorial design accessibility HTML
+
+Understanding the Role of Color in Accessibility
+tutorial design accessibility CSS
+
+Improving Accessibility With Color Contrast
+tutorial design accessibility CSS
+
+Designing Accessible Forms for Everyone
+tutorial design accessibility HTML
+
+Improving Form Usability and Accessibility
+tutorial development design UX accessibility HTML
+
+Creating Accessible Video and Audio Content
+tutorial design accessibility
+
+Creating Accessible Web Animations
+tutorial design accessibility CSS
+
+Using Motion and Web Animation Responsibly
+tutorial design accessibility CSS
+
