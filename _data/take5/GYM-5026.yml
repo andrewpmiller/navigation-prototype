@@ -1,6 +1,6 @@
 ---
 course_ID: GYM-5026
-title: "Publishing Your First Github Pages Website"
+title: "Publishing Your First GitHub Pages Website"
 date: 2020-02-03T00:00:00-04:00
 course_type: take5
 url: /courses/take5/GYM-5026/
@@ -25,4 +25,5 @@ related_content:
   url: "https://github.com/collections/github-pages-examples"
 - label: "Gymnasium: Introduction to Git and GitHub"
   url: "https://thegymnasium.com/courses/GYM/006/0/about"
+tags: ["Development","GitHub"]
 ---

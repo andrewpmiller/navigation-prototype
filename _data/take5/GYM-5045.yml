@@ -23,4 +23,5 @@ related_content:
   url: "https://www.w3.org/WAI/tutorials/forms/notifications/"
 - label: "Usable and Accessible Form Validation and Error Recovery"
   url: "https://webaim.org/techniques/formvalidation/"
+tags: ["Development", "Design","UX","Accessibility","HTML"]
 ---
