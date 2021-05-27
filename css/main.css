@@ -24,6 +24,10 @@ h1::before {
   pointer-events: none;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 li h2 {
   font-size: 1.2em;
   margin-top: 0;
@@ -66,26 +70,26 @@ ul[role="list"] > li {
   font-weight: bolder;
   line-height: 1.35;
   background-color: #eee;
-  padding: 2rem;
+  padding: 2rem 2rem 1.2rem;
   border: 1px solid #000;
   border-radius: 0.1875rem;
 }
 
-.topics {
-  align-self: end;
+li header {
+  margin-bottom: 2.2rem;
+}
+
+li aside {
   list-style: none;
   background-color: #fff;
   padding: 1rem 2rem;
   border-top: 1px dashed #000;
-  margin: 1rem -2rem -2rem;
+  margin: 0 -2rem -1.2rem;
 }
-
-@media (min-width: 39.65em) {
 
 .topics {
-  min-height: 3rem;
-}
-
+  padding-left: 0;
+  margin-bottom: 0;
 }
 
 .topics li {
@@ -106,6 +110,17 @@ ul[role="list"] > li {
   padding: 0.125rem;
   margin-left: -0.125rem;
   margin-right: 0.125rem;
+}
+
+.format:not(div) {
+  text-transform: capitalize;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+.full .format a::after,
+.short .format a::after {
+  content: " Course";
 }
 
 :target li[class] {
