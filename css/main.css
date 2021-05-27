@@ -7,30 +7,40 @@ html {
 
 body {
   max-width: 80rem;
-  margin: 0 auto;
-  padding: 1.2rem;
+  margin: 0 auto 2rem;
+  padding: 0 1.2rem;
 }
 
-h1 {
-  margin-top: 0;
+main {
+  padding-top: 1.2rem;
 }
 
-h1::before {
-  display: block;
-  content: " ";
-  margin-top: -1.2rem;
-  height: 1.2rem;
-  visibility: hidden;
-  pointer-events: none;
+@media (min-width: 80rem) {
+
+main {
+  display: grid;
+  grid-template-columns: 20rem auto;
+  gap: 1.2rem;
 }
 
+main > header > div {
+  position: fixed;
+}
+
+}
+
+header h1 {
+  margin-top: 1rem;
+}
+
+h1,
 p {
   margin-bottom: 0;
 }
 
 li h2 {
   font-size: 1.2em;
-  margin-top: 0;
+  margin-top: -0.2rem;
   margin-bottom: 0;
 }
 
@@ -41,10 +51,18 @@ a {
 nav {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  border-top: 1px dashed #ccc;
+  margin-top: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+nav > div {
+  margin-top: 0.6rem;
 }
 
 nav ul {
   padding-left: 1.35rem;
+  margin-bottom: 0;
 }
 
 nav li {
@@ -58,7 +76,7 @@ nav p {
 ul[role="list"] {
   list-style: none;
   padding-left: 0;
-  margin: 2rem 0 0;
+  margin: 1.2rem 0 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: 1.2rem;
@@ -70,7 +88,7 @@ ul[role="list"] > li {
   font-weight: bolder;
   line-height: 1.35;
   background-color: #eee;
-  padding: 2rem 2rem 1.2rem;
+  padding: 2rem 2rem 1rem;
   border: 1px solid #000;
   border-radius: 0.1875rem;
 }
@@ -84,7 +102,7 @@ li aside {
   background-color: #fff;
   padding: 1rem 2rem;
   border-top: 1px dashed #000;
-  margin: 0 -2rem -1.2rem;
+  margin: 0 -2rem -1rem;
 }
 
 .topics {
