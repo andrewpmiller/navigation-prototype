@@ -83,15 +83,15 @@ permalink: /
         {%- assign tag_class = "" -%}
         {% for tag in item.tags %}
         {%- assign tag_class = tag_class | append: tag | append: " " | downcase -%}
-        {% endfor %}   
+        {% endfor %}
         {%- assign trim_last = tag_class | size | minus: 1  -%}
-        {%- assign tag_class = tag_class | slice: 0, trim_last -%}   
+        {%- assign tag_class = tag_class | slice: 0, trim_last -%}
         <li class="{{ tag_class }}">
-          <h2>{{ item.title }}</h2>
+          <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
           <ul class="topics">
             {% for tag in item.tags %}
             <li><a href="#{{ tag | downcase }}">{{ tag }}</a></li>
-            {% endfor %}      
+            {% endfor %}
           </ul>
         </li>
     {%- endif -%}
@@ -109,7 +109,7 @@ permalink: /
         {%- assign trim_last = tag_class | size | minus: 1  -%}
         {%- assign tag_class = tag_class | slice: 0, trim_last -%}
         <li class="{{ tag_class }}">
-          <h2>{{ item.title }}</h2>
+          <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
           <ul class="topics">
             {% for tag in item.tags %}
             <li><a href="#{{ tag | downcase }}">{{ tag }}</a></li>
@@ -131,7 +131,7 @@ permalink: /
         {%- assign trim_last = tag_class | size | minus: 1  -%}
         {%- assign tag_class = tag_class | slice: 0, trim_last -%}
         <li class="{{ tag_class }}">
-          <h2>{{ item.title }}</h2>
+          <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
           <ul class="topics">
             {% for tag in item.tags %}
             <li><a href="#{{ tag | downcase }}">{{ tag }}</a></li>
