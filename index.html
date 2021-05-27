@@ -9,7 +9,7 @@ permalink: /
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
   <title>Gym Courses | Navigation Prototype</title>
-  <meta name="author" content="Aquent Gymnasim (Justin Gagne, Andrew Miller)">
+  <meta name="author" content="Aquent Gymnasium (Justin Gagne, Andrew Miller)">
 </head>
 
 {% assign courses_catalog = site.data.courses | sort %}
@@ -113,7 +113,7 @@ permalink: /
           <ul class="topics">
             {% for tag in item.tags %}
             <li><a href="#{{ tag | downcase }}">{{ tag }}</a></li>
-            {% endfor %}      
+            {% endfor %}
           </ul>
         </li>
 {%- endif -%}
@@ -121,7 +121,7 @@ permalink: /
 
 <!-- TAKE 5 -->
 {%- for take5_hash in take5_catalog -%}
-    {%- assign item = take5_hash[1] -%}    
+    {%- assign item = take5_hash[1] -%}
     {%- assign format = "Tutorial" -%}
         <!-- {{ item.course_ID }} -->
         {%- assign tag_class = "" -%}
@@ -135,10 +135,10 @@ permalink: /
           <ul class="topics">
             {% for tag in item.tags %}
             <li><a href="#{{ tag | downcase }}">{{ tag }}</a></li>
-            {% endfor %}      
+            {% endfor %}
           </ul>
         </li>
-      
+
 {%- endfor -%}
 
 
