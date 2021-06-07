@@ -12,6 +12,7 @@ permalink: /
   <meta name="author" content="Aquent Gymnasium (Justin Gagne, Andrew Miller)">
 </head>
 
+{% assign base_path = "https://courses.gymna.si" %}
 {% assign courses_catalog = site.data.courses | sort %}
 {% assign take5_catalog = site.data.take5 | sort %}
 
@@ -93,14 +94,14 @@ permalink: /
         {%- assign tag_class = tag_class | slice: 0, trim_last -%}
         <li class="full {{ tag_class }}">
           <header>
-            <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+            <h2><a href="{{ item.url | prepend: base_path }}">{{ item.title }}</a></h2>
           </header>
           <aside>
             <p class="format"><a href="#{{ item.course_type }}">{{ item.course_type }}</a></p>
             <ul class="topics">
-              {% for tag in item.tags %}
-              <li><a href="#{{ tag | downcase }}">{{ tag }}</a></li>
-              {% endfor %}
+              {%- for tag in item.tags -%}
+              <li><a href="#{{ tag | downcase }}">{{ tag | replace: '-', ' ' }}</a></li>
+              {%- endfor -%}
             </ul>
           </aside>
         </li>
@@ -120,14 +121,14 @@ permalink: /
         {%- assign tag_class = tag_class | slice: 0, trim_last -%}
         <li class="short {{ tag_class }}">
           <header>
-            <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+            <h2><a href="{{ item.url | prepend: base_path }}">{{ item.title }}</a></h2>
           </header>
           <aside>
             <p class="format"><a href="#{{ item.course_type }}">{{ item.course_type }}</a></p>
             <ul class="topics">
-              {% for tag in item.tags %}
-              <li><a href="#{{ tag | downcase }}">{{ tag }}</a></li>
-              {% endfor %}
+              {%- for tag in item.tags -%}
+              <li><a href="#{{ tag | downcase }}">{{ tag | replace: '-', ' ' }}</a></li>
+              {%- endfor -%}
             </ul>
           </aside>
         </li>
@@ -147,14 +148,14 @@ permalink: /
         {%- assign tag_class = tag_class | slice: 0, trim_last -%}
         <li class="tutorial {{ tag_class }}">
           <header>
-            <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+            <h2><a href="{{ base_path | append: '/courses/take5/' }}{{ item.title | slugify }}">{{ item.title }}</a></h2>
           </header>
           <aside>
-            <p class="format"><a href="#{{ item.course_type | replace: "take5", "tutorial" }}">{{ item.course_type | replace: "take5", "tutorial" }}</a></p>
+            <p class="format"><a href="#{{ item.course_type | replace: 'take5', 'tutorial' }}">{{ item.course_type | replace: 'take5', 'tutorial' }}</a></p>
             <ul class="topics">
-              {% for tag in item.tags %}
-              <li><a href="#{{ tag | downcase }}">{{ tag }}</a></li>
-              {% endfor %}
+              {%- for tag in item.tags -%}
+              <li><a href="#{{ tag | downcase }}">{{ tag | replace: '-', ' ' }}</a></li>
+              {%- endfor -%}
             </ul>
           </aside>
         </li>
