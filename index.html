@@ -16,7 +16,6 @@ permalink: /
 {% assign courses_catalog = site.data.courses | sort %}
 {% assign take5_catalog = site.data.take5 | sort %}
 
-
 <body>
 
 <div class="topic" id="design">
@@ -30,7 +29,7 @@ permalink: /
 <div class="topic" id="accessibility">
 <div class="topic" id="design-systems">
 <div class="topic" id="development">
-<div class="topic" id="js">
+<div class="topic" id="javascript">
 <div class="topic" id="php">
 <div class="topic" id="github">
 <div class="topic" id="ux">
@@ -42,7 +41,7 @@ permalink: /
 <div class="format" id="short">
 <div class="format" id="tutorial">
 
-<main>
+<main id="courses">
 
 <header>
   <div>
@@ -58,10 +57,16 @@ permalink: /
             <a href="#development"><b>Development</b></a>
           </li>
           <li>
-            <a href="#ux"><b>User Experience (UX)</b></a>
+            <a href="#ux"><b>UX</b></a>
           </li>
           <li>
-            <a href="#career"><b>Career</b></a>
+            <a href="#prototyping"><b>Prototyping</b></a>
+          </li>
+          <li>
+            <a href="#accessibility"><b>Accessibility</b></a>
+          </li>
+          <li>
+            <a href="#career"><b>Career Skills</b></a>
           </li>
           <li><a href="#view-all"><b>All Topics</b></a></li>
         </ul>
@@ -103,6 +108,29 @@ permalink: /
         <li class="full {{ tag_class }}">
           <header>
             <h2><a href="{{ item.url | prepend: base_path }}">{{ item.title }}</a></h2>
+            <details class="info">
+              <summary><b>Description</b></summary>
+              <div class="info-details">
+                <p>{{ item.short_description }}</p>
+                <div>
+                  <dl>
+                    <dt><b>Skills Covered</b></dt>
+                    {%- for skill in item.skills -%}
+                    <dd>{{ skill.label }}</dd>
+                    {%- endfor -%}
+                  </dl>
+                  <dl>
+                    <dt><b>This Course Is For</b></dt>
+                    {%- for audience in item.audience -%}
+                    <dd>{{ audience.label }}</dd>
+                    {%- endfor -%}
+                  </dl>
+                </div>
+                <a class="button" href="{{ item.url | prepend: base_path }}"><b>Learn More</b></a>
+                <a class="button" href="{{ item.url | prepend: base_path | replace: 'about', 'info' }}"><b>Enroll Now</b></a>
+              </div>
+            </details>
+            <a class="button" href="{{ item.url | prepend: base_path | replace: 'about', 'info' }}"><b>Enroll Now</b></a>
           </header>
           <aside>
             <p class="format"><a href="#{{ item.course_type }}">{{ item.course_type }}</a></p>
@@ -130,6 +158,29 @@ permalink: /
         <li class="short {{ tag_class }}">
           <header>
             <h2><a href="{{ item.url | prepend: base_path }}">{{ item.title }}</a></h2>
+            <details class="info">
+              <summary><b>Description</b></summary>
+              <div class="info-details">
+                <p>{{ item.short_description }}</p>
+                <div>
+                  <dl>
+                    <dt><b>Skills Covered</b></dt>
+                    {%- for skill in item.skills -%}
+                    <dd>{{ skill.label }}</dd>
+                    {%- endfor -%}
+                  </dl>
+                  <dl>
+                    <dt><b>This Course Is For</b></dt>
+                    {%- for audience in item.audience -%}
+                    <dd>{{ audience.label }}</dd>
+                    {%- endfor -%}
+                  </dl>
+                </div>
+                <a class="button" href="{{ item.url | prepend: base_path }}"><b>Learn More</b></a>
+                <a class="button" href="{{ item.url | prepend: base_path | replace: 'about', 'info' }}"><b>Enroll Now</b></a>
+              </div>
+            </details>
+            <a class="button" href="{{ item.url | prepend: base_path | replace: 'about', 'info' }}"><b>Enroll Now</b></a>
           </header>
           <aside>
             <p class="format"><a href="#{{ item.course_type }}">{{ item.course_type }}</a></p>
@@ -157,6 +208,13 @@ permalink: /
         <li class="tutorial {{ tag_class }}">
           <header>
             <h2><a href="{{ base_path | append: '/courses/take5/' }}{{ item.title | slugify }}">{{ item.title }}</a></h2>
+            <details class="info">
+              <summary><b>Description</b></summary>
+              <div class="info-details">
+                <p>{{ item.short_description }}</p>
+              </div>
+            </details>
+            <a class="button" href="{{ item.url | prepend: base_path }}"><b>Watch Now</b></a>
           </header>
           <aside>
             <p class="format"><a href="#{{ item.course_type | replace: 'take5', 'tutorial' }}">{{ item.course_type | replace: 'take5', 'tutorial' }}</a></p>
@@ -169,7 +227,6 @@ permalink: /
         </li>
 
 {%- endfor -%}
-
 
 </ul>
 
