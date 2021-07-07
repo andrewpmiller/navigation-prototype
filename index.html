@@ -133,7 +133,7 @@ permalink: /
             <a class="button" href="{{ item.url | prepend: base_path | replace: 'about', 'info' }}"><b>Enroll Now</b></a>
           </header>
           <aside>
-            <p class="format"><a href="#{{ item.course_type }}">{{ item.course_type }}</a></p>
+            <p class="format">{{ item.course_type }}</p>
             <ul class="topics">
               {%- for tag in item.tags -%}
               <li><a href="#{{ tag | downcase }}">{{ tag | replace: '-', ' ' }}</a></li>
@@ -183,7 +183,7 @@ permalink: /
             <a class="button" href="{{ item.url | prepend: base_path | replace: 'about', 'info' }}"><b>Enroll Now</b></a>
           </header>
           <aside>
-            <p class="format"><a href="#{{ item.course_type }}">{{ item.course_type }}</a></p>
+            <p class="format">{{ item.course_type }}</p>
             <ul class="topics">
               {%- for tag in item.tags -%}
               <li><a href="#{{ tag | downcase }}">{{ tag | replace: '-', ' ' }}</a></li>
@@ -217,7 +217,7 @@ permalink: /
             <a class="button" href="{{ item.url | prepend: base_path }}"><b>Watch Now</b></a>
           </header>
           <aside>
-            <p class="format"><a href="#{{ item.course_type | replace: 'take5', 'tutorial' }}">{{ item.course_type | replace: 'take5', 'tutorial' }}</a></p>
+            <p class="format">{{ item.course_type | replace: 'take5', 'tutorial' }}</p>
             <ul class="topics">
               {%- for tag in item.tags -%}
               <li><a href="#{{ tag | downcase }}">{{ tag | replace: '-', ' ' }}</a></li>

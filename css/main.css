@@ -160,8 +160,8 @@ li aside {
   margin-bottom: 0.6rem;
 }
 
-.full .format a::after,
-.short .format a::after {
+.full .format::after,
+.short .format::after {
   content: " Course";
 }
 
