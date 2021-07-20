@@ -12,7 +12,9 @@ body {
 }
 
 main {
-  padding-top: 1.2rem;
+  max-width: 80rem;
+  margin: 0 auto 2rem;
+  padding: 1.2rem 1.2rem 0;
 }
 
 @media (min-width: 64em) {
@@ -74,6 +76,12 @@ nav li {
 nav p {
   font-size: 0.9em;
   margin-top: 0.4rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.4rem;
+  margin: -0.4rem;
 }
 
 ul[role="list"] {
@@ -141,10 +149,6 @@ li aside {
   margin-right: 0.4rem;
 }
 
-.topics li:first-child {
-  !font-weight: bolder;
-}
-
 .topics a {
   display: inline-block;
   padding: 0.125rem;
@@ -173,6 +177,12 @@ li aside {
   border: 1px solid #222;
   border-radius: 0.1875rem;
   margin-top: 1.2rem;
+}
+
+.button:hover,
+.button:focus {
+  color: #fff;
+  background-color: #666;
 }
 
 .button + .button {
@@ -281,4 +291,28 @@ summary {
 #short:target .short,
 #tutorial:target .tutorial {
   display: grid;
+}
+
+#design:target nav [href="#design"],
+#html:target nav [href="#design"],
+#css:target nav [href="#design"],
+#figma:target nav [href="#design"],
+#sketch:target nav [href="#design"],
+#adobe-xd:target nav [href="#design"],
+#invision-studio:target nav [href="#design"],
+#virtual-reality:target nav [href="#design"],
+#development:target nav [href="#development"],
+#javascript:target nav [href="#development"],
+#php:target nav [href="#development"],
+#github:target nav [href="#development"],
+#ux:target nav [href="#ux"],
+#prototyping:target nav [href="#prototyping"],
+#accessibility:target nav [href="#accessibility"],
+#career-skills:target nav [href="#career-skills"],
+#productivity:target nav [href="#career-skills"],
+#full:target nav [href="#full"],
+#short:target nav [href="#short"],
+#tutorial:target nav [href="#tutorial"],
+#view-all:target nav [href="#view-all"] {
+  background-color: #ff9;
 }
